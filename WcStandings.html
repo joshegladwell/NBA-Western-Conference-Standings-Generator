@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Western Conference</title>
+    <script src="WcStandings.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Enter Team Data:</legend>
+        <label for="teamName">Enter the team name:</label>
+        <select id="teamName">
+            <option value="Dallas Mavericks">Dallas Mavericks</option>
+            <option value="Denver Nuggets">Denver Nuggets</option>
+            <option value="Golden State Warriors">Golden State Warriors</option>
+            <option value="Houston Rockets">Houston Rockets</option>
+            <option value="LA Clippers">LA Clippers</option>
+            <option value="Los Angeles Lakers">Los Angeles Lakers</option>
+            <option value="Memphis Grizzlies">Memphis Grizzlies</option>
+            <option value="Minnesota Timberwolves">Minnesota Timberwolves</option>
+            <option value="New Orleans Pelicans">New Orleans Pelicans</option>
+            <option value="Oklahoma City Thunder">Oklahoma City Thunder</option>
+            <option value="Phoenix Suns">Phoenix Suns</option>
+            <option value="Portland Trail Blazers">Portland Trail Blazers</option>
+            <option value="Sacramento Kings">Sacramento Kings</option>
+            <option value="San Antonio Spurs">San Antonio Spurs</option>
+            <option value="Utah Jazz">Utah Jazz</option>
+        </select>
+        <br><br>
+        <label for="teamWins">Wins:</label>
+        <input type="number" min="0" max="82" id="teamWins">
+
+        <label for="teamLosses">Losses:</label>
+        <input type="number" min="0" max="82" id="teamLosses">
+        <br><br>
+        <input type="button" id="enterData" value="Input Data" onclick="dataRetriever()">
+        <br><br><br><br>
+        <input type="button" id="generateData" value="Generate Data" onclick="newStandings()">
+    </fieldset>
+    <br><br>
+    <p id="output"></p>
+</body>
+</html>
